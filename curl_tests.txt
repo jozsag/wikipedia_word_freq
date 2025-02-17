@@ -1,0 +1,7 @@
+GET test
+curl "http://localhost:8181/?title=Python_(programming_language)&depth=1"
+
+POST test
+curl -X POST http://localhost:8181 -H "Content-Type: application/json" -d "{\"article\": \"Quotition_and_partition\", \"depth\": 2, \"ignore_list\": [\"the\", \"a\"], \"percentile\": 1}"
+
+curl -X POST http://localhost:8181 -H "Content-Type: application/json" -d "{\"article\": \"Python_(programming_language)\", \"depth\": 1, \"ignore_list\": [\"the\", \"a\"], \"percentile\": 1}"
